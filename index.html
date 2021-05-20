@@ -9,14 +9,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body onload="inIt();">
+<body onload="inIt();" oncontextmenu="return false;">
     <h1>Minesweeper</h1>
-    <button onclick="inIt();">Reset Game</button>
+    <button class="status-btn" onclick="inIt();">😀<b></b></button>
+    <span class="lives"></span>
     <table>
         <tbody class="board"></tbody>
-    </table>
+    </table><br>
+    <time class="timer-box">
+        <label id="minutes">00</label>:<label id="seconds">00</label>
+    </time>
+    <div id="outer">
+        <div class="inner"><button class="btn" onClick="setLevel(4, 2)">Easy</button></div>
+        <div class="inner"><button class="btn" onClick="setLevel(8, 12)">Medium</button></div>
+        <div class="inner"><button class="btn" onClick="setLevel(12, 30)">Hard</button></div>
+    </div>
     <script src="js/utils.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/data.js"></script>
 </body>
 
 </html>

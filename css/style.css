@@ -1,17 +1,73 @@
-.cell {
-    cursor: pointer;
-    border: 1px solid green;
-    width: 55px;
-    height: 55px;
-    text-align: center;
-    color: rgb(9, 63, 2);
-    font-weight: 900;
-    text-shadow: 2px 7px 8px rgb(33, 151, 10, .7);
-    font-size: 28px;
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to top right , rgb(231, 231, 231),rgb(72, 255, 0, .7))
 }
 
-table {
-    box-shadow: 6px 15px 5px rgb(106, 179, 38, .6)
+.cell {
+    cursor: pointer;
+    border: 0.5px solid rgb(0, 0, 0);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: rgb(53, 57, 59);
+    font-weight: 900;
+    /* text-shadow: 2px 7px 8px rgb(33, 151, 10, .7); */
+    font-size: 20px;
+    background-image: linear-gradient(to top right , rgb(113, 178, 252),rgba(4, 94, 168, 0.7))
+}
+
+.btn {
+    background-color: rgb(113, 178, 252);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    opacity: 0.5;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.timer-box {
+    border: 2px solid lightgray;
+    border-radius: 7px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+.board {
+    background-color: black;
+}
+
+#outer
+{
+    width:100%;
+    margin-top: 20px;
+    /* text-align: center; */
+}
+.inner
+{
+    display: inline-block;
+}
+
+.clicked {
+    background-image: unset;  background-color: #fff;; opacity: .8; 
+}
+
+.lives {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.status-btn {
+    font-size: 20px;
+
+}
+.status-btn:hover {
+    cursor: pointer;
 }
